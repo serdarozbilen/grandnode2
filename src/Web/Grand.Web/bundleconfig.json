@@ -57,7 +57,11 @@
       "wwwroot/theme/lib/axios.min.js",
       "wwwroot/theme/lib/vue-awesome-countdown.umd.min.js",
       "wwwroot/theme/lib/vee-validate.minimal.min.js",
-      "wwwroot/theme/lib/pikaday.min.js"
+      "wwwroot/theme/lib/pikaday.min.js",
+      "wwwroot/theme/script/validation-config.min.js",
+      "wwwroot/theme/script/public.common.js",
+      "wwwroot/theme/script/public.axios.js",
+      "wwwroot/theme/script/public.reservation.js"
     ],
     "minify": {
       "enabled": false,
