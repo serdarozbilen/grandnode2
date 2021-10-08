@@ -4,7 +4,7 @@
     var supportRtl = workContext.WorkingLanguage.Rtl;
 
     <link rel="stylesheet" type="text/css" asp-src="/bundles/libs.css">
-    <link rel="stylesheet" type="text/css" asp-src="/assets/custom/style.css">
+    <link rel="stylesheet" type="text/css" asp-src="/assets/custom/style.css" async>
 
     <environment include="Development">
         @if (supportRtl)
@@ -38,15 +38,15 @@
     </environment>
 
     <environment include="Development">
-        <script asp-src="/bundles/libs.js"></script>
         <script asp-src="/theme/script/validation-config.min.js"></script>
         <script asp-src="/theme/script/public.common.js"></script>
         <script asp-src="/theme/script/public.axios.js"></script>
     </environment>
     <environment include="Production">
-        <script src="/bundles/site.min.js"></script>
+        <script asp-src="/bundles/libs.js"></script>
+        <script asp-src="/bundles/site.min.js" async></script>
     </environment>
 
     <script asp-location="Footer" asp-src="/theme/script/app.js"></script>
-    <script asp-location="Footer" asp-src="/assets/custom/script.js"></script>
+    <script asp-location="Footer" asp-src="/assets/custom/script.js" async></script>
 }
